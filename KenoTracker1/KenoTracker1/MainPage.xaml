@@ -1,11 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="KenoTracker1.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:KenoTracker1"
-             x:Class="KenoTracker1.MainPage">
+             Title="KenoTracker">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid>
+        <Label x:Name="currnotxt"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               TextColor="Red"
+               VerticalOptions="Center" />
+
+        <Button Grid.Row="0"
+                Grid.Column="1"
+                Clicked="clear_click"
+                Text="Clear" />
+        <Label x:Name="indextxt"
+               Grid.Row="0"
+               Grid.Column="2"
+               HorizontalOptions="Center"
+               TextColor="Yellow"
+               VerticalOptions="Center" />
+        <Button Grid.Row="0"
+                Grid.Column="3"
+                Clicked="curr_click"
+                Text="Current List" />
+
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Clicked="num_click"
+                Text="1" />
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Clicked="num_click"
+                Text="2" />
+        <Button Grid.Row="1"
+                Grid.Column="2"
+                Clicked="num_click"
+                Text="3" />
+        <Button Grid.Row="1"
+                Grid.Column="3"
+                Clicked="stats_click"
+                Text="Stats" />
+
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Clicked="num_click"
+                Text="4" />
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Clicked="num_click"
+                Text="5" />
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                Clicked="num_click"
+                Text="6" />
+        <Button Grid.Row="2"
+                Grid.Column="3"
+                Clicked="pick_click"
+                Text="Pick Game" />
+
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Clicked="num_click"
+                Text="7" />
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Clicked="num_click"
+                Text="8" />
+        <Button Grid.Row="3"
+                Grid.Column="2"
+                Clicked="num_click"
+                Text="9" />
+        <Button Grid.Row="3"
+                Grid.Column="3"
+                Clicked="data_click"
+                Text="Clear Data" />
+
+
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Clicked="settings_click"
+                Text="Settings" />
+
+        <Button Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Clicked="num_click"
+                Text="0" />
+
+    </Grid>
+
 
 </ContentPage>
