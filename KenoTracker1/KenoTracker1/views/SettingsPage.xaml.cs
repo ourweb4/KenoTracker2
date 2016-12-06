@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Permissions;
@@ -17,6 +18,8 @@ namespace KenoTracker1.views
         public SettingsPage ()
         {
             InitializeComponent ();
+            _conn = DependencyService.Get<ISQLiteDb>().GetConnection();
+
         }
 
         protected override void OnAppearing()

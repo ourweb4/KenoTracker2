@@ -17,7 +17,7 @@ namespace KenoTracker1
         private string curnum = "";
        // private int index = 1;
         public ObservableCollection<string> list = new ObservableCollection<string>();
-        private string _s;
+        
 
         public MainPage()
         {
@@ -207,6 +207,7 @@ namespace KenoTracker1
            var pg  = new  CurrGamePage(list);
             await Navigation.PushAsync(pg);
             list = pg.xList;
+            curnum = "";
         }
 
         private async void stats_click(object sender, EventArgs e)
